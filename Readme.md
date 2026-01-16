@@ -1,19 +1,17 @@
-# WiFi Password Exporter for Windows 11
+# WiFi Password Exporter for Windows 10 / 11
 
-A simple batch script to export all saved WiFi network passwords from Windows 11 to a text file.
+A simple batch script to export all saved WiFi network passwords from Windows 10 / 11 to a text file. Insipired by [WinNet](https://github.com/niirmaaltwaatii/WinNet)  , a lot of effort has been put into [WinNet](https://github.com/niirmaaltwaatii/WinNet) by [Niirmaal Twaatii](https://github.com/niirmaaltwaatii) and you should definitely check it out, this one is just an attempt to for a simpler more export focused script..
 
 ## Features
 
-- 📡 Exports all saved WiFi networks and passwords
-- 📁 Choose custom output directory or use current directory
-- 🔒 Identifies open networks (no password)
-- 📊 Displays total count of networks found
-- 📝 Generates clean, formatted text output
-- ✨ Easy to use - no complex setup required
+- Exports all saved WiFi networks and passwords
+- Choose custom output directory or use current directory
+- Generates clean, formatted text output
+- Easy to use, no setup required, download and run.
 
 ## Requirements
 
-- Windows 10 or Windows 11
+- Windows 10 or Windows 11, will make same for linux soon..
 - Administrator privileges (required to access WiFi passwords)
 
 ## Installation
@@ -114,15 +112,7 @@ The script uses Windows built-in `netsh` commands to:
 - **Solution:** You'll only see passwords for networks you've previously connected to on this computer. The passwords must be stored in Windows.
 
 ### Script Not Working on Windows 10
-- **Solution:** The script works on both Windows 10 and 11, but make sure you have the latest updates installed.
-
-## Use Cases
-
-- 📱 Migrating to a new device
-- 🔧 Troubleshooting network issues
-- 💾 Backing up network credentials
-- 🏢 Documenting office WiFi networks
-- 🔄 Recovering forgotten passwords
+- **Solution:** The script works on both Windows 10 and 11, but make sure you have the latest updates installed. More specifically check if netsh is installed and working.
 
 ## Command Reference
 
@@ -133,24 +123,13 @@ netsh wlan show profile name="NAME" key=clear  # Shows password for specific pro
 ```
 
 ## License
-
-This project is free to use and modify. No attribution required.
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+This script is free to use and modify. No attribution required.
 
 ## Disclaimer
 
 This tool is intended for legitimate use only - to recover your own WiFi passwords on your own devices. Unauthorized access to networks is illegal. Use responsibly.
 
-## Author
-
-Created for easy WiFi password management on Windows systems.
-
 ---
-
-⭐ If you found this helpful, please consider giving it a star on GitHub!
 
 ## FAQ
 
@@ -167,4 +146,20 @@ A: Windows stores WiFi passwords in a protected area that requires elevated perm
 A: No. This only retrieves passwords that are already saved on your computer. It cannot crack or hack passwords for networks you haven't connected to.
 
 **Q: Is my data sent anywhere?**  
+
 A: No. This script runs entirely locally on your computer. No data is sent to any server or external location.
+
+---
+
+## To-do's
+
+- Improve ux
+- add more exporting options.
+- linux version.
+
+
+
+
+
+
+
